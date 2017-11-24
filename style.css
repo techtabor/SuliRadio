@@ -105,6 +105,7 @@ footer > h1 {
 	font-weight: normal;
 }
 
+/*RADIO*/
 header.radio {
 	width: 100%;
 	height: 50px;
@@ -169,7 +170,6 @@ nav.radio > h1 {
 
 footer.radio {
 	position: absolute;
-	bottom: 0;
 	bottom: 0;
   	left: 0;
 	width: 100%;
@@ -261,6 +261,9 @@ div.radios > h1 {
 	padding-top: 15px;
 	font-weight: normal;
 }
+
+}
+/*RADIO end*/
 
 /*LOGIN*/
 div.login {

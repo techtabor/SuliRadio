@@ -262,6 +262,19 @@ div.radios > h1 {
 	font-weight: normal;
 }
 
+div.main-manual {
+	display: block;
+	text-align: center;
+	padding-top: 150px;
+}
+
+div.main-manual > form > input {
+	margin-top: 5px;
+	width: 500px;
+}
+
+div.main-manual > button {
+	margin-top: 5px;
 }
 /*RADIO end*/
 

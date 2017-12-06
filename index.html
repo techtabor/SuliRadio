@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Sulirádió | A budapesti Eötvös József Gimnázium honlapja</title>
+
+<!-- BOOTSTRAP -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<!-- BOOTSTRAP-end -->
+
+  	<style>
+  		.btn-danger {
+  			width: 100%;
+  			text-align: center;
+  			margin-left: 0px;
+  		}
+  		.btn-success {
+  			width: 100%;
+  			text-align: center;
+  			margin-right: 0px,
+  		}
+  		.customcol-success {
+  			text-align: right;
+  			margin-right: -6px;
+  		}
+  		.customcol-danger {
+  			text-align: left;
+  			margin-left: -6px;
+  		}
+  		.song {
+  			border-radius: 0;
+  			display: block;
+  			vertical-align: middle;
+  		}
+  		.customjumbo{
+  			padding: 5px 10px 5px 10px;
+  			min-height: 0px;
+  		}
+  	</style>
+  </head>
+  <body style="background-image: url(img/pattern.png); background-repeat: repeat;">
+
+<!-- NAVBAR -->  	
+  	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	 	<a class="navbar-brand" href="#"><img src="img/logo.png" height="30" class="d-inline-block align-top" alt="" style="margin-left: -5px; margin-right: 5px;">
+    		Sulirádió	
+  		</a>
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	    	<span class="navbar-toggler-icon"></span>
+	  	</button>
+	  	<div class="collapse navbar-collapse" id="navbarNavDropdown">
+	    	<ul class="navbar-nav ml-auto">
+	      		<li class="nav-item active">
+	        		<a class="nav-link" href="#" style="margin-bottom: -10px;">Főoldal</a>
+	     	 	</li>
+	      		<li class="nav-item">
+	       	 		<a class="nav-link" href="#" style="margin-right: 5px;">Toplista</a>
+	    	  	</li>
+	    	  	<li>
+	    	  		<div class="dropdown" style="margin-top: 5px; margin-bottom: 5px;">
+					  <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Bejelentkezés
+					  </button>
+					  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+					    <form>
+						  <div class="form-group">
+						    <input type="username" class="form-control" id="username" placeholder="Felhasználónév" style="width: 135.5px; height: 30px; margin-left: 10px; margin-top: 5px;">
+						  </div>
+						  <div class="form-group">
+						    <input type="password" class="form-control" id="password" placeholder="Jelszó" style="width: 135.5px; height: 30px; margin-left: 10px; margin-top: -5px;">
+						  </div>
+						</form>
+						<button class="btn btn-outline-secondary btn-sm" type="submit" onclick="logIn()" style="margin-left: 10px; margin-top: -5px; margin-bottom: 5px;">Tovább</button>
+					  </div>
+					</div>
+	    	  	</li>
+	    	</ul>
+	  	</div>
+	</nav>
+<!-- NAVBAR-end -->
+
+<!-- SONG -->
+	<div class="container" style="margin-top: 17.5px;">
+		<div class="jumbotron customjumbo">
+			<span class="badge badge-pill badge-secondary">Zene:</span>
+			<h6 style="margin-top: 2.5px;">Dirty Palm - Step Back</h6>
+		</div>
+	</div>
+<!-- SONG-end -->
+
+<!-- RADIO -->
+	<div class="container" style="margin-top: -15px; margin-bottom: -15px;">
+		<div class="jumbotron customjumbo">
+			<span class="badge badge-pill badge-secondary">Rádiós:</span>
+			<h6 style="margin-top: 2.5px;">Bárdos Marcell & Geiszt Miklós</h6>
+		</div>
+	</div>
+<!-- RADIO-end -->
+
+<!-- FEEDBACK -->
+	<div class="container">
+		<div class="row">
+    		<div class="col customcol-success">
+     			<button type="button" class="btn btn-success">tetszik <img src="img/up.png"><span class="badge"></span></button>
+    		</div>
+    		<div class="col customcol-danger">
+     			 <button type="button" class="btn btn-danger">nem tetszik <img src="img/down.png"><span class="badge"></span></button>
+    		</div>
+ 		</div>
+	</div>
+
+	<div class="container" style="margin-top: 17.5px;">
+		<form>
+			<div class="form-group">
+	    		<textarea class="form-control" id="comment" placeholder="Küldj valós idejű hozzászólást" rows="3" style="resize: none;"></textarea>
+	  		</div>
+	  	</form>
+	  	<button type="submit" class="btn btn-dark" style="width: 100%; margin-top: 2.5px;">Elküldés</button>
+	</div>
+<!-- FEEDBACK-end -->
+
+<!-- COPYRIGHT -->
+	<div class="container" style="margin-top: 15px;">
+		<p class="text-right" style="color: #545454; font-size: 12px;">© 2017 Demeter Zalán & Kasoly Benedek</p>  	
+	</div>
+<!-- COPYRIGHT-end -->
+
+<!-- BOOTSTRAP-SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<!-- BOOTSTRAP-SCRIPT-end -->
+    
+    <script>
+    	function logIn() {
+    		location.href = "manual.html";
+    	}
+    </script>
+
+  </body>
+</html>
